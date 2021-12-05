@@ -1,0 +1,6 @@
+* [project](/)
+* [probleemstelling](probleemstelling.md)
+* [analyse](analyse.md)
+* [problemen](problemen.md)
+* [oplossing](oplossing.md)
+* [besluit](besluit.md)
