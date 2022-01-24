@@ -6,7 +6,7 @@ Als extra heb ik 2 projecten gemaakt. 1 ervaan is gelukt en kun je zelf uitbreid
 # emoji 
 Het project dat ik eraan gewerkt heb is een emoji via de vga poort op de scherm te tonen. Dit is een leuk concept om juist te beseffen hoe je via met de vga poort van de fpga of andere elektronische hardware ermee kunt spelen. Niet alleen is het gelukt om een emoji op mijn beelt te zetten maar ook frame per frame iets anders te laten doen. 
 
-## vga in fpga
+### vga in fpga
 Om dit te kunnen laten werken zijn er verschillende manieren maar basis hiervan is dat je moet weten hoe juist de communicatie in vga werkt.
 
 * vga
@@ -46,7 +46,7 @@ om zo'n clock te maken heb ik gebruik gemaakt van clock wizard die je terug kunt
   <iframe width="700" height="400" src="../../img/dsd.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-#### 640x480 block
+### 640x480 block
 ik heb dit op mijn manier gedaan maar je kunt nog altijd betere en slimmere manieren vinden op het internet ( Voor verder te gaan maak zeker een verilog bestand aan geef die VGA_Driver als naam en kopier al de onderstaande code).Als eerste voeg in de inputs en de outputs toe. Hier zien we dat ik bij elke kleur [3:0] zet. dit omdat de artix-7 elke kleur 4 keer heeft(bekijke afbeelding) en het zi vermeld staat in hun schema.
 sync dient om te kunnen synchroniseren en counter om de pixels te tellen en naar de volgende block door te geven. De block om te teknen.  
 
