@@ -27,7 +27,7 @@ Ons doel is om simpel een scilab of multisim schakeling om te zetten naar FPGA z
 Mijn werking om dit project succesvol af te krijgen gaat alsvolgt: 
 
 - zo veel mogelijk informatie hoe multisim PLD werkt
-- zien hoe scilab met scicos werkt
+- zien hoe scilab/scicos werkt
 - stappen volgen voor de conversie
 - test schakeling op de fpga maken
 - van multisim naar fpga via de teststappen(zie oplossing)

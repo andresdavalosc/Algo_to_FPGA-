@@ -41,3 +41,28 @@ Dit zou mij of iemand in de toekomst helpen om de conversie te maken multisim na
 
 
 # Scilab
+
+Als je scilab niet kent of niet weet waarvoor het dient dan leg ik het kort uit. Scilab is een programma die op matlab trek, hiermee kun je wiskundige formules als simulaties aanmaken om de werking ervan te zien. Dit gebruiken we vaak in DSP ( Digital Signal Processing ) projecten. Hiermee kunnen we bv. sinus vorm gaan genereren met ruis en dan met de kracht van scilab filters gaan plaatsen om een betere zicht te hebben hoe juist een filter een ruis signaal wegfilters. Dit is allemaal goed maar is het mogelijk om te implementeren met de fpga om zo een filter mee te kunnen bouwen ? 
+
+#### analyse
+Voor mijn analyse heb ik een de stappen gevolgd van de website zelf. Hieronder kun je de link terug vinden en zelf lezen en het begrijpen. 
+( link: https://docplayer.net/48630799-Scicos-hdl-user-guide.html )
+
+Voor dat ik verder ga moet ik je wel teleurstellen en zeggen dat het jammer genoeg niet meer mogelijk is om deze conversie naar de FPGA te realiseren. Maar als je toch interesse hebt hoe ik het geanalyseerd heb mag je verder lezen. 
+
+
+## Stap 1
+download scilab en scicos. Daarna heb je de keuze om de stappen te volgen op de link of mijn manier te volgen. Het verschil is dat je bij hun stappen bepaalde mappen in de D drive moeten installeren en gaan plaatsen. 
+
+## Stap 2
+Eens dat alles gedownload is moet je scicos openen en zie je dit. 
+
+<p align="center">
+<img img width="500" height="500" src='../../img/scilab1.PNG'></img><br></p>
+
+hier klik je op Applications en kies je scicos. Nu opent zich een venster. Hier klikken we op pallette --> palletes en kunnen we blokken gaan kiezen en plaatsen op de consolse. Dit is waar ik vast zat en niet meer verder kon werken om het te implementeren op de FPGA.
+
+<p align="center">
+<img img width="400" height="500" src='../../img/scilab2.PNG'></img><br></p>
+
+Als je wilt weten waarom het niet gelukt is dan kun je naar problemen gaan en zie je een gedetaileerd waarom het niet gelukt is. 
