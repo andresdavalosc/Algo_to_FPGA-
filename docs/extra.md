@@ -1018,6 +1018,10 @@ moeten gaan staan. Dit zorgt ervoor da we een nummer gaan kunnen zien op de 7 se
 <p align="center">
 <img img width="900" height="600" src='../../img/top_schema.PNG'></img><br>
 
+ <p align="center">
+<figure class="video_container">
+  <iframe width="700" height="400" src="../../img/tictactoe.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 # Problemen:
 
@@ -1031,3 +1035,5 @@ moeten gaan staan. Dit zorgt ervoor da we een nummer gaan kunnen zien op de 7 se
  - 7segment bug fix
  - pixels op een beter manier tekenen
  - eventueel text op scherm 
+
+ 
