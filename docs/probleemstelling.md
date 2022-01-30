@@ -9,7 +9,7 @@ Eerste jaar studenten weten niet direct hoe je een FPGA juist moet gaan programm
 <img width="100" height="100" img src='../../img/fpga.png'></img>
 <br>
 
-![](../../img/multisim.png)
+![](../../img/vga1.PNG)
 
 # Probleemstelling2
 Deze probleemstelling is wat voor geavanceerde studenten. Wat we hiermee willen bereiken is geen connectie van de multisim maar dan van scilab. Scilab is een programma zoals Matlab waar je wiskundige algoritme kunt schrijven en oplossen. Deze taal trek veel op de structuur van python en is dus makkelijk om snel te leren. Scilab kan geen rechtstreekse communicatie houden met de FPGA dus daarvoor gaan we voor jullie stappen voorzien hoe je het best moet doen om een simpele algoritme te schrijven vanuit scilab naar de fpga en dus het ook visueel te kunnen zien op de FPGA.
