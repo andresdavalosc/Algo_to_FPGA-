@@ -11,19 +11,19 @@ Om dit te kunnen laten werken zijn er verschillende manieren maar basis hiervan 
 
 * vga
  <p align="center">
-<img img width="500" height="300" src='../../img/vga1.PNG'></img><br>
+<img img width="500" height="300" src='img/vga1.PNG'></img><br>
 
 Om met de vga te kunnen werken moeten we toch zel rekening houden met een paar dingens. Ten eerste is de vga 640x480, werkt op 60Hz en heeft een clock nodig van 25MHz.
 
 * vga horizontal counter
  <p align="center">
-<img img width="500" height="300" src='../../img/vga2.PNG'></img><br>
+<img img width="500" height="300" src='img/vga2.PNG'></img><br>
 
 Bij de horizontal counter zien we dat we geen 640 hebben maar 800. Hoe kan dit ? dit kan omdat de eerste puls van 0-96 eigenlijk een waarschuwig puls is omdat het gaat "starten" van 96-144 gaat die wachten of toch niet op de scherm tonen en vanaf 144 tot 784 tekent die wat je maar wilt. daarna gaat die tot 800 tot die terug bij 0 begint.
 
 * vga vertical counter
  <p align="center">
-<img img width="500" height="300" src='../../img/vga3.PNG'></img><br>
+<img img width="500" height="300" src='img/vga3.PNG'></img><br>
  
  Bij de vertical counter doen we hetzelfde maar niet tot 800 maar tot 521 hier zien we weer dat de display time van 31 tot 511 gaat wat ons 480 geeft. 
 
@@ -35,7 +35,7 @@ om met de fpga de vga te laten werken hebben we dus een clock nodig van 25MHz ee
 
 * vga pinout
  <p align="center">
-<img img width="400" height="150" src='../../img/vga4.PNG'></img><br>
+<img img width="400" height="150" src='img/vga4.PNG'></img><br>
 
 #### clock
 om zo'n clock te maken heb ik gebruik gemaakt van clock wizard die je terug kunt vinden bij IP catalog. hier kies je 25Hz als output clock. 
@@ -43,7 +43,7 @@ om zo'n clock te maken heb ik gebruik gemaakt van clock wizard die je terug kunt
 * video clock
  <p align="center">
 <figure class="video_container">
-  <iframe width="700" height="400" src="../../img/dsd.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe width="700" height="400" src="img/dsd.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 ### 640x480 blok
@@ -68,7 +68,7 @@ sync dient om te kunnen synchroniseren en counter om de pixels te tellen en naar
 
 
  <p align="center">
-<img img width="300" height="400" src='../../img/vga5.PNG'></img><br>
+<img img width="300" height="400" src='img/vga5.PNG'></img><br>
 
 Hier zet ik alles in een register die van 0 tot 9 gaat
 
@@ -277,12 +277,12 @@ Dit is wat ik gemaakt heb.
 
  <p align="center">
 <figure class="video_container">
-  <iframe width="700" height="400" src="../../img/smile.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe width="700" height="400" src="img/smile.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 #### schema met vd0 als vga blok en vs0 als teken blok 
  <p align="center">
-<img img width="700" height="400" src='../../img/img_smiley_schema.PNG'></img><br>
+<img img width="700" height="400" src='img/img_smiley_schema.PNG'></img><br>
 
 # Tic Tac Toe
 Hier is niet alles gelukt zoals ik het wou maar maar de basis is volledig afgeraakt dus geef ik hier toch wat extra uitleg over de werking en wat ik in gedachten had. Maar natuurlijk is het de bedoeling dat jij verder aan dit werkt. Om mogelijk te kunnen maken wat ik heb gemaakt heb je sommige stuk code van het vorige project nodig. Hier maak je  gebruik van een vga blok en een teken blok. 
@@ -291,7 +291,7 @@ Hier is niet alles gelukt zoals ik het wou maar maar de basis is volledig afgera
 De bedoeling hier is dat je tic tac toe ga spelen met je partner. in mijn code heb ik 3 knoppen gedeclareerd . De bovenste om het vak te kunnen selecteren, de linkse om terug rechts bovenaan te beginnen te selecteren en ten laatste de rechts waar je na dat je het vak heb geselecteerd het vak gaat kunnen kleuren met je kleur(groen of blauw). 
 
  <p align="center">
-<img img width="700" height="400" src='../../img/basys3.PNG'></img><br>
+<img img width="700" height="400" src='img/basys3.PNG'></img><br>
 
 #### stap1: project aanmaken
 we maken een top, vga_img (teken blok), vga_driver(vga blok) aan en kopieren alles van ervoor hierin. wat hier anders is dat we i.p.v een smiley we lijnen, blokken enz gaat tekenen. Daarna maken we ook 2 buttons projecten aan, een refreshcounter, anodecontrol, bcdcontrol en een 7segment 
@@ -332,7 +332,7 @@ We maken hier 3 knoppen aan . eerste is een next button waar we 2 inputs hebben 
 next blok 
 
 <p align="center">
-<img img width="300" height="200" src='../../img/next_bt.PNG'></img><br>
+<img img width="300" height="200" src='img/next_bt.PNG'></img><br>
 
 wij de select button blok gaan we hier hetzelfde doen maar ipv tot 9 maar tot 1 en we sturen telkens de waarde van count naar onze teken blok (lijnen) om telkens een vak te selecteren.
 
@@ -368,7 +368,7 @@ wij de select button blok gaan we hier hetzelfde doen maar ipv tot 9 maar tot 1 
 select blok
 
 <p align="center">
-<img img width="500" height="400" src='../../img/select_bt.PNG'></img><br>
+<img img width="500" height="400" src='img/select_bt.PNG'></img><br>
 
 #### stap 3: in en out-puts, reg, parameters declareren van teken blok 
 we verwijderen de code van de teken blok van het vorige project en vervangen het met het volgende code. 
@@ -1016,11 +1016,11 @@ moeten gaan staan. Dit zorgt ervoor da we een nummer gaan kunnen zien op de 7 se
 
 #### TOP SCHEMA
 <p align="center">
-<img img width="900" height="600" src='../../img/top_schema.PNG'></img><br>
+<img img width="900" height="600" src='img/top_schema.PNG'></img><br>
 
  <p align="center">
 <figure class="video_container">
-  <iframe width="700" height="400" src="../../img/tictactoe.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe width="700" height="400" src="img/tictactoe.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 # Problemen:

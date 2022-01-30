@@ -16,8 +16,8 @@ Deze probleemstelling is wat voor geavanceerde studenten. Wat we hiermee willen 
 <br>
 
 <p align="center">
-<img img width="200" height="80" src='../../img/scilab.png'></img>
-<img img width="90" height="100" src='../../img/arrow2.png'></img>
-<img width="100" height="100" img src='../../img/fpga.png'></img>
+<img img width="200" height="80" src='img/scilab.png'></img>
+<img img width="90" height="100" src='img/arrow2.png'></img>
+<img width="100" height="100" img src='img/fpga.png'></img>
 
 </p>
