@@ -8,7 +8,7 @@ Eerste jaar studenten weten niet direct hoe je een FPGA juist moet gaan programm
 <img img width="90" height="100" src='../../img/arrow2.png'></img>
 <img width="100" height="100" img src='../../img/fpga.png'></img>
 
-![multisim](../../img/multisim.png "multisim") ![](../../img/arrow2.png) ![](../../img/fpga.png)
+![multisim](../../img/multisim.png "multisim")
 
 </p>
 <br>
