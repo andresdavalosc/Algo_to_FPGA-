@@ -4,7 +4,7 @@ Als extra heb ik 2 projecten gemaakt. 1 ervaan is gelukt en kun je zelf uitbreid
 
 
 # Emoji 
-Het project dat ik eraan gewerkt heb is een emoji via de vga poort op de scherm te tonen. Dit is een leuk concept om juist te beseffen hoe je via met de vga poort van de fpga of andere elektronische hardware ermee kunt spelen. Niet alleen is het gelukt om een emoji op mijn beelt te zetten maar ook frame per frame iets anders te laten doen. 
+Het project dat ik er aan gewerkt heb is een emoji via de vga poort op de scherm te tonen. Dit is een leuk concept om juist te beseffen hoe je via met de vga poort van de fpga of andere elektronische hardware ermee kunt spelen. Niet alleen is het gelukt om een emoji op mijn beelt te zetten maar ook frame per frame iets anders te laten doen. 
 
 ### vga in fpga
 Om dit te kunnen laten werken zijn er verschillende manieren maar basis hiervan is dat je moet weten hoe juist de communicatie in vga werkt.
@@ -176,7 +176,7 @@ voor dat we echt beginnen te tekenen gaan we een assign doen zodat we de kleuren
 	assign o_green = r_green;
 
 
-hier gaan we weer een posedge doen en controlleren met een case welke frame het nu is. We kunnen teknene door te zeggen dat binnen een bepaalde bereike die de kleur rood of blauw of green op 4'hF moet gaan zetten. I_counter_y bepaalde de verticale pixels waarde op de scherm en i_counter_x de horizontale pixels. als we dus links van boven willen iets willen tekenen moeten we dus if(i_counter_y >= 32 && i_counter_y < 35 && i_counter_x >= 144 && i_counter_y < 150)r_red <= 4'hF; nu kunnen we iets links boven tekenen. maar waarom deze waardes? Denk eraan dat de v counter op 32 begint en h counter op 144 nu hebben we iets 6pixels breed en 3 pixels hoog getekend met de kleur rood. Als je dit nu wilt update dat die naar rechts gaan kun je dit update door gebruik te maken van FRAME2 en FRAME3 enz en de x en y locatie update. zo kun je zien dat uw punt beweegt.
+hier gaan we weer een posedge doen en controlleren met een case welke frame het nu is. We kunnen tekenen door te zeggen dat binnen een bepaalde bereike die de kleur rood of blauw of green op 4'hF moet gaan zetten. I_counter_y bepaalde de verticale pixels waarde op de scherm en i_counter_x de horizontale pixels. als we dus links van boven willen iets willen tekenen moeten we dus if(i_counter_y >= 32 && i_counter_y < 35 && i_counter_x >= 144 && i_counter_y < 150)r_red <= 4'hF; nu kunnen we iets links boven tekenen. maar waarom deze waardes? Denk eraan dat de v counter op 32 begint en h counter op 144 nu hebben we iets 6pixels breed en 3 pixels hoog getekend met de kleur rood. Als je dit nu wilt update dat die naar rechts gaan kun je dit update door gebruik te maken van FRAME2 en FRAME3 enz en de x en y locatie update. zo kun je zien dat uw punt beweegt.
 
 	always @ (posedge clk)
 		begin 

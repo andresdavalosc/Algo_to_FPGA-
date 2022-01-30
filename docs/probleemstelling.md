@@ -4,9 +4,11 @@
 Eerste jaar studenten weten niet direct hoe je een FPGA juist moet gaan programmeren dus laat staan dat ze de FPGA taal verilog of VHDL snel van vanbuiten moeten leren. Wat wel mogelijk is om snel multisim te leren en een simpele schakeling te bouwen, dit is een van de doelstellingen dus zou iedereen het moeten kunnen. Als oplossing hiervoor maken David en ik een simpele document met stappen om een multisim bestand dit om te zetten in verilog / VHDL zonder enige code ervoor te schrijven. zo kunnen de eerste jaars makkelijk een FPGA "programmeren" en hun schakeling met echte hardware zien werken.  
 
 <br>
+<p>
 <img img width="290" height="100" src='img/multisim.png'></img>
 <img img width="90" height="100" src='img/arrow2.png'></img>
 <img width="100" height="100" img src='img/fpga.png'></img>
+</p>
 <br>
 
 
