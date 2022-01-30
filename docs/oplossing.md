@@ -18,7 +18,7 @@ Je opent multisim en je maakt een PLD project aan. Hier ga je het volgende moete
 Nu maak je een schakeling met de gate poorten of flipflops naar keuze. in mijn geval heb ik een simpele schakeling gemaakt met 2 AND poorten.
 
 <p align="center">
-<img img width="900" height="100" src='img/oplossing1.png'></img><br></p><br>
+<img img width="900" height="100" src='img/oplossing1.PNG'></img><br></p><br>
 
 ## Stap3
 
