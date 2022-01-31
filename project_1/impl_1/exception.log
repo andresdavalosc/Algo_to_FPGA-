@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\andre\OneDrive - AP Hogeschool Antwerpen\school 2021-2022\dsd\project_1\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Toegang geweigerd

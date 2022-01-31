@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8885754765926154085  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 0a84010ca0c1461898f5ad63d8272019 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot VGA_smiley_top_behav xil_defaultlib.VGA_smiley_top xil_defaultlib.glbl" , 
+    buildDate : "Apr  4 2018" , 
+    buildTime : "19:30:32" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/VGA_smiley_top_behav/xsimk.exe\"   \"xsim.dir/VGA_smiley_top_behav/obj/xsim_0.win64.obj\" \"xsim.dir/VGA_smiley_top_behav/obj/xsim_1.win64.obj\" \"C:\\Xilinx\\Vivado\\2018.1\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"C:\\Xilinx\\Vivado\\2018.1\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

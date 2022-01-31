@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jan 30 21:22:07 2022
+# Process ID: 12272
+# Current directory: C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1/top.vds
+# Journal file: C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14668 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 387.027 ; gain = 98.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1/.Xil/Vivado-12272-MSI/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (1#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1/.Xil/Vivado-12272-MSI/realtime/clk_wiz_1_stub.v:5]
+WARNING: [Synth 8-689] width (2) of port connection 'clk_out2' does not match port width (1) of module 'clk_wiz_1' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v:57]
+WARNING: [Synth 8-350] instance 'clock25' of module 'clk_wiz_1' requires 5 connections, but only 4 given [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v:53]
+INFO: [Synth 8-6157] synthesizing module 'VGA_driver' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_driver.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_driver' (2#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_driver.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vga_img' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:4]
+	Parameter FRAME_1 bound to: 2'b00 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:174]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:728]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:733]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:738]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:743]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:748]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:753]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:758]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:763]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:775]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:780]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:785]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:790]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:795]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:800]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:805]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:810]
+WARNING: [Synth 8-6090] variable 'spel' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:816]
+WARNING: [Synth 8-6014] Unused sequential element clk_counter_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:112]
+WARNING: [Synth 8-6014] Unused sequential element FRAME_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:120]
+INFO: [Synth 8-6155] done synthesizing module 'vga_img' (3#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:4]
+INFO: [Synth 8-6157] synthesizing module 'buttonpress' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/buttonpress.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'buttonpress' (4#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/buttonpress.v:1]
+INFO: [Synth 8-6157] synthesizing module 'button_select' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/button_select.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'button_select' (5#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/button_select.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'count2' does not match port width (2) of module 'button_select' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v:114]
+INFO: [Synth 8-6157] synthesizing module 'refreshcounter' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/refreshcounter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'refreshcounter' (6#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/refreshcounter.v:1]
+WARNING: [Synth 8-689] width (2) of port connection 'refresh_clock' does not match port width (1) of module 'refreshcounter' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v:123]
+INFO: [Synth 8-6157] synthesizing module 'anode_controler' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/anode_controler.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'anode_controler' (7#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/anode_controler.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BCD_control' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/BCD_control.v:3]
+WARNING: [Synth 8-567] referenced signal 'digit1' should be on the sensitivity list [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/BCD_control.v:10]
+WARNING: [Synth 8-567] referenced signal 'digit2' should be on the sensitivity list [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/BCD_control.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_control' (8#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/BCD_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'segment' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/segment.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'segment' (9#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/segment.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (10#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 443.367 ; gain = 155.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 443.367 ; gain = 155.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 443.367 ; gain = 155.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clock25'
+Finished Parsing XDC File [c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'clock25'
+Parsing XDC File [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'change_state'. [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc:55]
+WARNING: [Vivado 12-507] No nets matched 'button2_IBUF'. [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc:61]
+WARNING: [Vivado 12-507] No nets matched 'button_IBUF'. [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc:62]
+WARNING: [Vivado 12-507] No nets matched 'change_state_IBUF'. [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc:66]
+Finished Parsing XDC File [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 785.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 785.633 ; gain = 497.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 785.633 ; gain = 497.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for clock25. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 785.633 ; gain = 497.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "r_vcounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'player2_1_reg' into 'p1_1_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:393]
+INFO: [Synth 8-4471] merging register 'player1_1_reg' into 'p2_1_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:390]
+INFO: [Synth 8-4471] merging register 'player2_2_reg' into 'p1_2_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:406]
+INFO: [Synth 8-4471] merging register 'player1_2_reg' into 'p2_2_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:403]
+INFO: [Synth 8-4471] merging register 'player2_3_reg' into 'p1_3_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:420]
+INFO: [Synth 8-4471] merging register 'player1_3_reg' into 'p2_3_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:417]
+INFO: [Synth 8-4471] merging register 'player2_4_reg' into 'p1_4_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:433]
+INFO: [Synth 8-4471] merging register 'player1_4_reg' into 'p2_4_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:430]
+INFO: [Synth 8-4471] merging register 'player2_5_reg' into 'p1_5_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:446]
+INFO: [Synth 8-4471] merging register 'player1_5_reg' into 'p2_5_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:443]
+INFO: [Synth 8-4471] merging register 'player2_6_reg' into 'p1_6_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:459]
+INFO: [Synth 8-4471] merging register 'player1_6_reg' into 'p2_6_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:456]
+INFO: [Synth 8-4471] merging register 'player2_7_reg' into 'p1_7_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:472]
+INFO: [Synth 8-4471] merging register 'player1_7_reg' into 'p2_7_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:469]
+INFO: [Synth 8-4471] merging register 'player2_8_reg' into 'p1_8_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:485]
+INFO: [Synth 8-4471] merging register 'player1_8_reg' into 'p2_8_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:482]
+INFO: [Synth 8-4471] merging register 'player2_9_reg' into 'p1_9_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:498]
+INFO: [Synth 8-4471] merging register 'player1_9_reg' into 'p2_9_reg' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:495]
+WARNING: [Synth 8-6014] Unused sequential element player2_1_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:393]
+WARNING: [Synth 8-6014] Unused sequential element player1_1_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:390]
+WARNING: [Synth 8-6014] Unused sequential element player2_2_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:406]
+WARNING: [Synth 8-6014] Unused sequential element player1_2_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:403]
+WARNING: [Synth 8-6014] Unused sequential element player2_3_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:420]
+WARNING: [Synth 8-6014] Unused sequential element player1_3_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:417]
+WARNING: [Synth 8-6014] Unused sequential element player2_4_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:433]
+WARNING: [Synth 8-6014] Unused sequential element player1_4_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:430]
+WARNING: [Synth 8-6014] Unused sequential element player2_5_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:446]
+WARNING: [Synth 8-6014] Unused sequential element player1_5_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:443]
+WARNING: [Synth 8-6014] Unused sequential element player2_6_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:459]
+WARNING: [Synth 8-6014] Unused sequential element player1_6_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:456]
+WARNING: [Synth 8-6014] Unused sequential element player2_7_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:472]
+WARNING: [Synth 8-6014] Unused sequential element player1_7_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:469]
+WARNING: [Synth 8-6014] Unused sequential element player2_8_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:485]
+WARNING: [Synth 8-6014] Unused sequential element player1_8_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:482]
+WARNING: [Synth 8-6014] Unused sequential element player2_9_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:498]
+WARNING: [Synth 8-6014] Unused sequential element player1_9_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v:495]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 785.633 ; gain = 497.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 176   
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 81    
+	  10 Input      1 Bit        Muxes := 9     
+	  18 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGA_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module vga_img 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 172   
+	   2 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+	  18 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 79    
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module buttonpress 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module button_select 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module refreshcounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module anode_controler 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module BCD_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "vga/r_vcounter" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top has port anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design top has port anode[1] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lijnen/spel_reg )
+INFO: [Synth 8-3886] merging instance 'lijnen/r_green_reg[0]' (FDR) to 'lijnen/r_green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_green_reg[1]' (FDR) to 'lijnen/r_green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_green_reg[2]' (FDR) to 'lijnen/r_green_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_blue_reg[0]' (FDS) to 'lijnen/r_blue_reg[1]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_blue_reg[1]' (FDS) to 'lijnen/r_blue_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_blue_reg[2]' (FDS) to 'lijnen/r_blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_red_reg[0]' (FDRE) to 'lijnen/r_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_red_reg[1]' (FDRE) to 'lijnen/r_red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lijnen/r_red_reg[2]' (FDRE) to 'lijnen/r_red_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (SELECT_BUTTON/count2_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lijnen/spel_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (lijnen/turn_reg[1]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 785.633 ; gain = 497.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock25/clk_out1' to pin 'clock25/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock25/clk_out2' to pin 'clock25/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 785.633 ; gain = 497.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 803.781 ; gain = 515.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_1     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_1 |     1|
+|2     |BUFG      |     2|
+|3     |LUT1      |     7|
+|4     |LUT2      |    46|
+|5     |LUT3      |    28|
+|6     |LUT4      |    62|
+|7     |LUT5      |    36|
+|8     |LUT6      |    64|
+|9     |MUXF7     |     2|
+|10    |FDCE      |     7|
+|11    |FDPE      |     1|
+|12    |FDRE      |    60|
+|13    |FDSE      |     1|
+|14    |IBUF      |     3|
+|15    |OBUF      |    42|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               |   364|
+|2     |  NEXT_BUTTON     |buttonpress    |    25|
+|3     |  SELECT_BUTTON   |button_select  |    14|
+|4     |  _refreshcounter |refreshcounter |     6|
+|5     |  lijnen          |vga_img        |    99|
+|6     |  vga             |VGA_driver     |   170|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 812.828 ; gain = 524.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 812.828 ; gain = 182.449
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 812.828 ; gain = 524.715
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 812.828 ; gain = 536.199
+INFO: [Common 17-1381] The checkpoint 'C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 812.828 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 30 21:23:05 2022...

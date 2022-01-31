@@ -1,0 +1,19 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/andre/Downloads/hvsync_generator/hvsync_generator.v,1097143438,verilog,,C:/Users/andre/Downloads/pong/pong.v,,hvsync_generator,,,,,,,,
+C:/Users/andre/Downloads/pong/pong.v,1155288004,verilog,,,,pong,,,,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,1643490178,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/BCD_control.v,,clk_wiz_1,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v,1643490178,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,,clk_wiz_1_clk_wiz,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/BCD_control.v,1643490539,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/anode_controler.v,,BCD_control,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/anode_controler.v,1643490570,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/button_select.v,,anode_controler,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/button_select.v,1643404817,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/buttonpress.v,,button_select,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/buttonpress.v,1643145648,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/refreshcounter.v,,buttonpress,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/refreshcounter.v,1643482174,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/segment.v,,refreshcounter,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/segment.v,1643490579,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_driver.v,,segment,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v,1642890800,verilog,,,,top,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_driver.v,1642957171,verilog,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/vga_img.v,,VGA_driver,,,../../../../project_1.srcs/sources_1/ip/clk_wiz_1,,,,,
+,,,,C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/project_1/project_1.srcs/sources_1/new/top.v,,vga_img,,,,,,,,
+,,,,,,,,,,,,,,
