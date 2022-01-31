@@ -2,7 +2,7 @@
 
 #### **Algorithm to fpga**
 
-Voor het vak Digital signal development kregen wij een taak toegewijd die ons het meest intereseerde. Mijn naam is Andres Davalos en samen met David Quie zijn we laatste jaars IOT studen die gekozen hebben om Algoritme naar FPGA te coverteren. 
+Voor het vak Digital systems development kregen wij een taak toegewijd die ons het meest intereseerde. Mijn naam is Andres Davalos en samen met David Quie zijn we laatste jaars IOT studen die gekozen hebben om Algoritme naar FPGA te coverteren. 
 
 
 
