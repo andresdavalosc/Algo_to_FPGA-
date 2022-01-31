@@ -1,5 +1,5 @@
 #2021-2022
-## FPGA Ap hogeschool project voor Digital signal development
+## FPGA Ap hogeschool project voor Digital systems development
 
 #### Hier maak/analyseer 4 projecten
 
