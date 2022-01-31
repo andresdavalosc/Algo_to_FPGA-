@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jan 24 15:19:32 2022
+# Process ID: 8816
+# Current directory: C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.runs/synth_1
+# Command line: vivado.exe -log VGA_smiley_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_smiley_top.tcl
+# Log file: C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.runs/synth_1/VGA_smiley_top.vds
+# Journal file: C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA_smiley_top.tcl -notrace

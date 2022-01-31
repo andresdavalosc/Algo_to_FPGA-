@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log VGA_smiley_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_smiley_top.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source VGA_smiley_top.tcl -notrace
+Command: synth_design -top VGA_smiley_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6652 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 387.156 ; gain = 98.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGA_smiley_top' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.runs/synth_1/.Xil/Vivado-8816-MSI/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.runs/synth_1/.Xil/Vivado-8816-MSI/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk25hertz' of module 'clk_wiz_0' requires 4 connections, but only 2 given [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley_top.v:20]
+INFO: [Synth 8-6157] synthesizing module 'VGA_smiley' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley.v:4]
+	Parameter FRAME_1 bound to: 2'b00 
+	Parameter FRAME_2 bound to: 2'b01 
+	Parameter FRAME_3 bound to: 2'b10 
+	Parameter FRAME_4 bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_smiley' (2#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley.v:4]
+INFO: [Synth 8-6157] synthesizing module 'VGA_driver' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_driver.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_driver' (3#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_driver.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_smiley_top' (4#1) [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley_top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 441.656 ; gain = 153.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 441.656 ; gain = 153.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 441.656 ; gain = 153.156
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk25hertz'
+Finished Parsing XDC File [c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk25hertz'
+Parsing XDC File [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_smiley_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_smiley_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 784.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 784.043 ; gain = 495.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 784.043 ; gain = 495.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {c:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for clk25hertz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 784.043 ; gain = 495.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'r_green_reg[3:0]' into 'r_red_reg[3:0]' [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley.v:50]
+WARNING: [Synth 8-6014] Unused sequential element r_green_reg was removed.  [C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.srcs/sources_1/imports/VGA_smiley_animation/VGA_smiley.v:50]
+INFO: [Synth 8-5544] ROM "FRAME" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_vcounter" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 784.043 ; gain = 495.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 96    
+	  11 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 51    
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module VGA_smiley 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 93    
+	  11 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 49    
+	  11 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module VGA_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "vd0/r_vcounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'vs0/r_blue_reg[0]' (FDE) to 'vs0/r_blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vs0/r_blue_reg[1]' (FDE) to 'vs0/r_blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vs0/r_blue_reg[2]' (FDE) to 'vs0/r_blue_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vs0/r_red_reg[0]' (FDE) to 'vs0/r_red_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vs0/r_red_reg[1]' (FDE) to 'vs0/r_red_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vs0/r_red_reg[2]' (FDE) to 'vs0/r_red_reg[3]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 784.043 ; gain = 495.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk25hertz/clk_out1' to pin 'clk25hertz/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 784.043 ; gain = 495.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 799.781 ; gain = 511.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk25hertz has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |     7|
+|3     |LUT1      |     3|
+|4     |LUT2      |    26|
+|5     |LUT3      |    19|
+|6     |LUT4      |    25|
+|7     |LUT5      |    27|
+|8     |LUT6      |    93|
+|9     |FDRE      |    51|
+|10    |OBUF      |    14|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   267|
+|2     |  vd0    |VGA_driver |   163|
+|3     |  vs0    |VGA_smiley |    88|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 804.188 ; gain = 173.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 804.188 ; gain = 515.688
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 804.188 ; gain = 527.176
+INFO: [Common 17-1381] The checkpoint 'C:/Users/andre/OneDrive - AP Hogeschool Antwerpen/school 2021-2022/dsd/img_vga/img_vga.runs/synth_1/VGA_smiley_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_smiley_top_utilization_synth.rpt -pb VGA_smiley_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 804.188 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 24 15:20:25 2022...
