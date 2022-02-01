@@ -2,7 +2,7 @@
 
 #### **Algorithm to fpga**
 
-Voor het vak Digital systems development kregen wij een taak toegewijd die ons het meest intereseerde. Mijn naam is Andres Davalos en samen met David Quie zijn we laatste jaars IOT studen die gekozen hebben om Algoritme naar FPGA te coverteren. 
+Voor het vak Digital systems development kregen ik een taak toegewijd die ons het meest intereseerde. Mijn naam is Andres Davalos ik ben een laatste jaar IOT studen die gekozen heeft om Algoritme naar FPGA te coverteren. 
 
 
 
@@ -18,7 +18,7 @@ met algortime bedoelen we juist iets zoals een software programma of code dat ka
 
 #### **Ons doel** 
 
-Ons doel is om simpel een scilab of multisim schakeling om te zetten naar FPGA zonder dat je zelf verilog of VHDL code moet schrijven. Als dit zou lukken zou het een groot succes zijn om het project over te dragen naar de andere jaren zodat ze het kunnen verbeteren. Het eind doel hiervan is dat studenten van het eerste jaar makkelijk een schakeling bouwen en ze het dan uploaden naar de FPGA bord en het werkt. Mijn persoonlijke doel hiervan is om zelf meer bij te leren en zo ook meer ervaring te krijgen in zowel scilab, multisim en FPGA.   
+Het doel is om simpel een scilab of multisim schakeling om te zetten naar FPGA zonder dat je zelf verilog of VHDL code moet schrijven. Als dit zou lukken zou het een groot succes zijn om het project over te dragen naar de andere jaren zodat ze het kunnen verbeteren. Het eind doel hiervan is dat studenten van het eerste jaar makkelijk een schakeling bouwen en ze het dan uploaden naar de FPGA bord en het werkt. Mijn doel is om zelf meer bij te leren en zo ook meer ervaring te krijgen in zowel scilab, multisim en FPGA.   
 
 
 
