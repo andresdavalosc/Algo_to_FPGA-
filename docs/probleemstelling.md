@@ -1,7 +1,7 @@
 # **Probleemstellingen**
 
 # Probleemstelling1
-Eerste jaar studenten weten niet direct hoe je een FPGA juist moet gaan programmeren dus laat staan dat ze de FPGA taal verilog of VHDL snel van vanbuiten moeten leren. Wat wel mogelijk is om snel multisim te leren en een simpele schakeling te bouwen, dit is een van de doelstellingen dus zou iedereen het moeten kunnen. Als oplossing hiervoor maken David en ik een simpele document met stappen om een multisim bestand dit om te zetten in verilog / VHDL zonder enige code ervoor te schrijven. zo kunnen de eerste jaars makkelijk een FPGA "programmeren" en hun schakeling met echte hardware zien werken.  
+Eerste jaar studenten weten niet direct hoe je een FPGA juist moet gaan programmeren dus laat staan dat ze de FPGA taal verilog of VHDL snel van vanbuiten moeten leren. Wat wel mogelijk is om snel multisim te leren en een simpele schakeling te bouwen, dit is een van de doelstellingen dus zou iedereen het moeten kunnen. Als oplossing hiervoor maak ik een simpele document met stappen om een multisim bestand om te zetten in verilog / VHDL zonder enige code ervoor te schrijven. zo kunnen de eerste jaars makkelijk een FPGA "programmeren" en hun schakeling met echte hardware zien werken.  
 
 <br>
 <p align="center" >

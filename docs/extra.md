@@ -1,10 +1,10 @@
 # probleemstelling
 
-Als extra heb ik 2 projecten gemaakt. 1 ervaan is gelukt en kun je zelf uitbreiden en de andere is ook gelukt maar niet op een 'correcte' manier maar harcoded. De bedoeling is dat je verder gaat analyseren en het uitbreiden.
+Als extra heb ik 2 projecten gemaakt. 1 ervan is gelukt en kun je zelf uitbreiden en de andere is ook gelukt maar niet op een 'correcte' manier maar harcoded. De bedoeling is dat je verder gaat analyseren en het uitbreiden.
 
 
 # Emoji 
-Het project dat ik er aan gewerkt heb is een emoji via de vga poort op de scherm te tonen. Dit is een leuk concept om juist te beseffen hoe je via met de vga poort van de fpga of andere elektronische hardware ermee kunt spelen. Niet alleen is het gelukt om een emoji op mijn beelt te zetten maar ook frame per frame iets anders te laten doen. 
+Het project dat ik er aan gewerkt heb is een emoji via de vga poort op de scherm te tonen. Dit is een leuk concept om juist te beseffen hoe je via met de vga poort van de fpga of andere elektronische hardware ermee kunt spelen. Niet alleen is het gelukt om een emoji op mijn beeld te zetten maar ook frame per frame iets anders te laten doen. 
 
 ### vga in fpga
 Om dit te kunnen laten werken zijn er verschillende manieren maar basis hiervan is dat je moet weten hoe juist de communicatie in vga werkt.
@@ -47,7 +47,7 @@ om zo'n clock te maken heb ik gebruik gemaakt van clock wizard die je terug kunt
 </figure>
 
 ### 640x480 blok
-ik heb dit op mijn manier gedaan maar je kunt nog altijd betere en slimmere manieren vinden op het internet ( Voor verder te gaan maak zeker een verilog bestand aan geef die VGA_Driver als naam en kopier al de onderstaande code).Als eerste voeg in de inputs en de outputs toe. Hier zien we dat ik bij elke kleur [3:0] zet. dit omdat de artix-7 elke kleur 4 keer heeft(bekijke afbeelding) en het zi vermeld staat in hun schema.
+ik heb dit op mijn manier gedaan maar je kunt nog altijd betere en slimmere manieren vinden op het internet ( Voor verder te gaan maak zeker een verilog bestand aan geef die VGA_Driver als naam en kopier al de onderstaande code). Als eerste voeg je in de inputs en de outputs toe. Hier zien we dat ik bij elke kleur [3:0] zet. dit omdat de artix-7 elke kleur 4 keer heeft(bekijke afbeelding) en het zo vermeld staat in hun schema.
 sync dient om te kunnen synchroniseren en counter om de pixels te tellen en naar de volgende blok door te geven. De blok om te teknen.  
 
 
@@ -78,7 +78,7 @@ Hier zet ik alles in een register die van 0 tot 9 gaat
 	reg [3:0] r_blue = 0;
 	reg [3:0] r_green = 0;
 
-Het volgende moet je goed is kijken. Hier zeg ik dat wanneer er een positieve edge van de clock is het controleert ls horizontal counter kleiner is dan 799 en dus begint te tellen tot 799. Daarna doe ik hetzelfde met de vertical counter.
+Het volgende moet je goed is kijken. Hier zeg ik dat wanneer er een positieve edge van de clock is het controleert of horizontal counter kleiner is dan 799 en dus begint te tellen tot 799. Daarna doe ik hetzelfde met de vertical counter.
 
 
 	always @(posedge clk)  // horizontal counter
@@ -119,7 +119,7 @@ En als laatste gaan we alleen de kleuren terugsturen de binnen de display time r
 Nu dat we dit gedaan hebben moeten we nog een paar dings doen en dan kunnen we beginnen met het tekenen!
 Maak een verilog bestand aan en noem het vga_smiley. 
 
-Dit is mijn teken blok dat ik gemaakt heb. is niet de meeste schone code maar het werkt. Hier zie je dat ik eerst de poorten declareer als input en output. de input poorten komen voornamelijk van de vga blok zodat we kunnen gaan tekenen. de output poorten verbind ik met d vga uitgang zodat we onze tekening op de scherm kunnen tonen. daarnaa maak ik een paar register aan die paar dingens gaan bijhouden. je ziet ook 4'h0 staan, dit is omdat ik zeg in hexadecimaal dat de kleur hier niet 'aan' moet staan. als ik dit aanpas naar bv. 4'hF geef dit mij de kleur terug. ik declareer verder 4 frames die ik gemaakt heb elke frame heeft zijn binaire waarde. 2'b00 betekendt dat het een binaire is en 2 bits groot. 
+Dit is mijn teken blok dat ik gemaakt heb. is niet de meeste schone code maar het werkt. Hier zie je dat ik eerst de poorten declareer als input en output. de input poorten komen voornamelijk van de vga blok zodat we kunnen gaan tekenen. de output poorten verbind ik met de vga uitgang zodat we onze tekening op de scherm kunnen tonen. daarnaa maak ik een paar register aan die paar dingens gaan bijhouden. je ziet ook 4'h0 staan, dit is omdat ik zeg in hexadecimaal dat de kleur hier niet 'aan' moet staan. als ik dit aanpas naar bv. 4'hF geef dit mij de kleur terug. ik declareer verder 4 frames die ik gemaakt heb elke frame heeft zijn binaire waarde. 2'b00 betekendt dat het een binaire is en 2 bits groot. 
 
 
     module VGA_smiley (
@@ -297,7 +297,7 @@ De bedoeling hier is dat je tic tac toe ga spelen met je partner. in mijn code h
 we maken een top, vga_img (teken blok), vga_driver(vga blok) aan en kopieren alles van ervoor hierin. wat hier anders is dat we i.p.v een smiley we lijnen, blokken enz gaat tekenen. Daarna maken we ook 2 buttons projecten aan, een refreshcounter, anodecontrol, bcdcontrol en een 7segment 
 
 #### stap 2: buttons
-We maken hier 3 knoppen aan . eerste is een next button waar we 2 inputs hebben 1 van de linkse knop die alles gaat resetten en de andere van de bovenste knop waar we vak per vak gaan selecteren. De assign moet niet maar is aangeraden om de output te kunnen controleren, als de led1 aan gaat dan staat count[0] op 1 enz. voor derest zeggen we hier dat het moet tellen tot 9 en na negen we terug gaan moeten beginnen van 0 of als we de reset knop drukken we weer bij 1 beginnen. 
+We maken hier 3 knoppen aan. Eerste is een next button waar we 2 inputs hebben 1 van de linkse knop die alles gaat resetten en de andere van de bovenste knop waar we vak per vak gaan selecteren. De assign moet niet maar is aangeraden om de output te kunnen controleren, als de led1 aan gaat dan staat count[0] op 1 enz. voor derest zeggen we hier dat het moet tellen tot 9 en na negen we terug gaan moeten beginnen van 0 of als we de reset knop drukken we weer bij 1 beginnen. 
 
 	module buttonpress(
     	input  button,
@@ -334,7 +334,7 @@ next blok
 <p align="center">
 <img img width="300" height="200" src='img/next_bt.PNG'></img><br>
 
-wij de select button blok gaan we hier hetzelfde doen maar ipv tot 9 maar tot 1 en we sturen telkens de waarde van count naar onze teken blok (lijnen) om telkens een vak te selecteren.
+Bij de select button blok gaan we hier hetzelfde doen maar ipv tot 9 maar tot 1 en we sturen telkens de waarde van count naar onze teken blok (lijnen) om telkens een vak te selecteren.
 
 	module button_select(
     	input  button2,    
@@ -371,7 +371,7 @@ select blok
 <img img width="500" height="400" src='img/select_bt.PNG'></img><br>
 
 #### stap 3: in en out-puts, reg, parameters declareren van teken blok 
-we verwijderen de code van de teken blok van het vorige project en vervangen het met het volgende code. 
+We verwijderen de code van de teken blok van het vorige project en vervangen het met het volgende code. 
 
 module vga_img (
 	input clk, 
@@ -463,11 +463,11 @@ module vga_img (
     reg spel = 0;
 	localparam FRAME_1 = 2'b00;
 
-we declareren hier alles wat we nodig gaan hebben. Ik weet dat het hardcoded is maar omwillen van tijdgebrek moest ik dit wel zo doen. Er zijn betere manieren waar je dit kunt doen. 
+We declareren hier alles wat we nodig gaan hebben. Ik weet dat het hardcoded is maar omwillen van tijdgebrek moest ik dit wel zo doen. Er zijn betere manieren waar je dit kunt doen. 
 
 #### stap 4: always @
 
-	om te kunnen kiezen wie juist aan de beurt is gebruiken we een select dat input is en dit gekoppeld is aan de output van het blok SELECT_BUTTON . wanneer de gebruiker erop klikt zal turn +1 gedaan worden en wanneer het groter is dan 1 bit gaat de flagturn aan. De flagturn is gekkopeld aan de ingang van de reset. Dus wat er gebeurt is dat reset = 1 waardoor turn terug 0 wordt. Hiermee bepalen we dus als speler1 aan de beurt is of speler 2.
+	Om te kunnen kiezen wie juist aan de beurt is gebruiken we een select dat input is en dit gekoppeld is aan de output van het blok SELECT_BUTTON . wanneer de gebruiker erop klikt zal turn +1 gedaan worden en wanneer het groter is dan 1 bit gaat de flagturn aan. De flagturn is gekkopeld aan de ingang van de reset. Dus wat er gebeurt is dat reset = 1 waardoor turn terug 0 wordt. Hiermee bepalen we dus als speler1 aan de beurt is of speler 2.
 
 	always @(posedge select or posedge reset)
 	   begin
@@ -553,7 +553,7 @@ De onderstaande code dient om de lijnen te tekenen. Hier heb ik een bereik van p
               r_blue <= 4'h0;
               r_green <= 4'h0;  
 
-eens dat we de lijnen getekend hebben gaan we een case doen om te zien in welke staat de next button is. we doen een case van 0001 to 1001. Eens dat het op 1 van deze waarde staat gaat het een rode vak tekenen. daarna controleren we als de speler het geselecteerd heeft. zo niet dan blijft het een rode vak, als het wel geselecteerd is dan zetten we de juiste flag op 1. 
+Eens dat we de lijnen getekend hebben gaan we een case doen om te zien in welke staat de next button is. we doen een case van 0001 to 1001. Eens dat het op 1 van deze waarde staat gaat het een rode vak tekenen. daarna controleren we als de speler het geselecteerd heeft. zo niet dan blijft het een rode vak, als het wel geselecteerd is dan zetten we de juiste flag op 1. 
 
 vb. als het next button op 0110 staat dan tekent zich een rode kader en als select op 1 staat dan is flag 6 = 1 en spel_reset = 1. hiermee gaan we de select counter reseten en is het de beurt aan de volgende speler. 
 
@@ -582,7 +582,7 @@ vb. als het next button op 0110 staat dan tekent zich een rode kader en als sele
                  end  
 
 
-Als flag 6 op 1 staat gaan we controleren wie zijn beurt het was door naar turn te kijke. als turn 1 zetten we p1_(flag nummer) op 1 en player2_(flag nummer) op 1 zodat die dezelfde kleur in die vak zich behouden wanneer turn naar 0 verandert. 
+Als flag 6 op 1 staat gaan we controleren wie zijn beurt het was door naar turn te kijken. Als turn 1 zetten we p1_(flag nummer) op 1 en player2_(flag nummer) op 1 zodat die dezelfde kleur in die vak zich behouden wanneer turn naar 0 verandert. 
 
         if( Flag6 )
             begin
@@ -626,7 +626,7 @@ als p1_6 of p2_6 op 1 staat dan komt er een groen of blauwe vierkant
             end                   
 
 
-we controlleren achteraf als we gewonnen zijn. als er 3 naast elkaar zijn van dezelfde kleur gaan we spel op 1 zetten. We zien dat er ook een finish en finish2 aanwezig is. Hiermee gaan we de punten bewaren en dit als output van [3:0] 4 bits lang. Dit gaat vervolgens naar de bcdcontroller.
+We controlleren achteraf als we gewonnen zijn. Als er 3 naast elkaar zijn van dezelfde kleur gaan we spel op 1 zetten. We zien dat er ook een finish en finish2 aanwezig is. Hiermee gaan we de punten bewaren en dit als output van [3:0] 4 bits lang. Dit gaat vervolgens naar de bcdcontroller.
 
             /////////////////////////////////////////////kijken als er 3 naast elkaar zijn (blauw)
             if(  p2_1 == 1 && p2_2 == 1  && p2_3 == 1) 
@@ -670,14 +670,14 @@ we controlleren achteraf als we gewonnen zijn. als er 3 naast elkaar zijn van de
                 spel = 1;   
              end
 
-hetzelfde doen we als heel ons scherm vol staat en geen winnaar is. dan zetten we spel op 1 en resetten we alles 
+Hetzelfde doen we als heel ons scherm vol staat en geen winnaar is, dan zetten we spel op 1 en resetten we alles.
 
               if(Flag1 == 1 && Flag2 == 1  && Flag3 == 1 && Flag4 == 1 && Flag5 == 1  && Flag6 == 1 && Flag7 == 1 && Flag8 == 1  && Flag9 == 1)
                   begin                                                                                                                 
                   spel = 1;                                                                                                   
                   end     
 
-als spel op 1 gezet wordt, resetten we alles en beginnen we terug. 
+Als spel op 1 gezet wordt, resetten we alles en beginnen we terug. 
   
     if(spel == 1)
          begin
@@ -736,7 +736,7 @@ als spel op 1 gezet wordt, resetten we alles en beginnen we terug.
          
 
 
-als laatste koppelen we flag met een led zodat we kunnen zien welke flag er aan staat. dit is een soort van hulp middel maar moet niet. 
+Als laatste koppelen we flag met een led zodat we kunnen zien welke flag er aan staat. Dit is een soort van hulp middel maar moet niet. 
 finish_ en finish2_ zijn uitgangen dus zeggen we dat de waardes van finish en finish2 naar de uitgang moeten gestuurd worden. Deze waardes worden gestuurd naar de ingang van de bcdcounter.
 
   	 assign led7  = Flag1;
@@ -755,7 +755,7 @@ finish_ en finish2_ zijn uitgangen dus zeggen we dat de waardes van finish en fi
 
 #### stap 5: refreshcounter
 
-Hier is de bedoeling dat aan de ingang een clk puls komt van 10kHz. dan gaan we tot 4 clk pulsen tellen en sturen we elke [1:0] 2 bits naar de output. ( 00 01 10 11).
+Hier is de bedoeling dat aan de ingang een clk puls komt van 10kHz. Dan gaan we tot 4 clk pulsen tellen en sturen we elke [1:0] 2 bits naar de output. ( 00 01 10 11).
 
 	 module refreshcounter(
       input refresh_clock,
@@ -768,7 +768,7 @@ Hier is de bedoeling dat aan de ingang een clk puls komt van 10kHz. dan gaan we 
 #### stap 6: anodecounter
 
 
-Hier krijgen we de 2 bits van de refreshcounter als input en gaan we zeggen dat bij een bepaalde count we de anode van de 7segment aan zullen maken. bij 00 gaan we de eerste segment aanzetten bij 01 gaan we alles uitzetten enz. dit gebeurt allemaal met een snelheid van 10khz omdat dit niet zichtbaar is voor onze ogen. 
+Hier krijgen we de 2 bits van de refreshcounter als input en gaan we zeggen dat bij een bepaalde count we de anode van de 7segment aan zullen maken. Bij 00 gaan we de eerste segment aanzetten bij 01 gaan we alles uitzetten enz. Dit gebeurt allemaal met een snelheid van 10khz omdat dit niet zichtbaar is voor onze ogen. 
 
 
     module anode_controler(
@@ -795,7 +795,7 @@ Hier krijgen we de 2 bits van de refreshcounter als input en gaan we zeggen dat 
 
 #### stap 7:bcdcounter
 
-hier krijgen we als input de 2 bits van de refreshcounter en finish, finish2 van de tekenblok. Hier zeggen we dat als de refrescounter op 00 staat dat de waarde van finish (we hebben dit gekoppeld aan de ingang van digit1) naar one_digit gestuurd moet worden en hetzelfde doen we met finish2 maar bij 11 ( d3 ) dit sturen we door naar de seven segment door. 
+Hier krijgen we als input de 2 bits van de refreshcounter en finish, finish2 van de tekenblok. Hier zeggen we dat als de refrescounter op 00 staat dat de waarde van finish (we hebben dit gekoppeld aan de ingang van digit1) naar one_digit gestuurd moet worden en hetzelfde doen we met finish2 maar bij 11 ( d3 ) dit sturen we door naar de seven segment door. 
 
     `timescale 1ns / 1ps
 
@@ -823,7 +823,7 @@ hier krijgen we als input de 2 bits van de refreshcounter en finish, finish2 van
 
 #### stap 8: seven_segment
 
-we krijgen als input de one digit en we controlleren bij de case welke nummber het staat. daarna zeggen we dat de leds op de cathode aan
+We krijgen als input de one digit en we controlleren bij de case welke nummber het staat. Daarna zeggen we dat de leds op de cathode aan
 moeten gaan staan. Dit zorgt ervoor da we een nummer gaan kunnen zien op de 7 segment display.
     
      

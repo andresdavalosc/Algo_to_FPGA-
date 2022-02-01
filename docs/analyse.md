@@ -10,7 +10,7 @@ Bij de eerste analyse ging het niet zoals gepland. bij het inkijken van de multi
 <img img width="900" height="400" src='img/analyse1.PNG'></img><br></p><br>
 
 ## Stap 2
-Bij de tweede stap heb ik hetzelfde gedaan als stap 1 maar hier heb ik een pld bestand ( dit kun je zien door '.mspc' achteraan ) aangemaakt op multisim. Bij het openen van dit bestand zag ik wat informatie over de type fpga bord en uitgangs voltage. Dit was niet echt wat ik zocht en negeerde dit bestand omdat ik er niet veel mee was. 
+Bij de tweede stap heb ik hetzelfde gedaan als stap 1 maar hier heb ik een pld bestand ( dit kun je zien door '.mspc' achteraan ) aangemaakt op multisim. Bij het openen van dit bestand zag ik wat informatie over de type FPGA bord en uitgangs voltage. Dit was niet echt wat ik zocht en negeerde dit bestand omdat ik er niet veel mee was. 
 
 #### Pld bestand
 <p align="center">
@@ -30,7 +30,7 @@ in vivado ( waar je de FPGA programmeert ) is er een contraint map en hierin kun
 <p align="center">
 <img img width="900" height="200" src='img/analyse3.PNG'></img><br></p>
 
-Zie je iets misschien gelijkaardig? De constraint bestand en de digilentbasys3 bestand hebben dezelfde structuur qua aanroepen van de pinnen. 
+Zie je iets misschien gelijkaardig? De constraint bestand en de digilent basys3 bestand hebben dezelfde structuur qua aanroepen van de pinnen. 
 Dit zou mij of iemand in de toekomst helpen om de conversie te maken multisim naar FPGA. Jammer genoeg roept deze bestand niet aan wat voor component juist aangesloten is en op welke naam de component heeft. 
 
  * Voorbeeld:

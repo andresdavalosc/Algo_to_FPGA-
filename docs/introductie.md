@@ -12,7 +12,7 @@ Wat is FPGA juist? zitten jullie zeker te denken. FPGA (Field programmable gate 
 
 #### **Wat bedoelen we met algoritme?**
 
-met algortime bedoelen we juist iets zoals een software programma of code dat kan omgezet worden in FPGA. Voor dit project gebruik ik als algoritme multisim en scilab.
+Met algortime bedoelen we juist iets zoals een software programma of code dat kan omgezet worden in FPGA. Voor dit project gebruik ik als algoritme multisim en scilab.
 
 
 
