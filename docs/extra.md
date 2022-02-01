@@ -1,4 +1,4 @@
-# probleemstelling
+# Probleemstelling
 
 Als extra heb ik 2 projecten gemaakt. 1 ervan is gelukt en kun je zelf uitbreiden en de andere is ook gelukt maar niet op een 'correcte' manier maar harcoded. De bedoeling is dat je verder gaat analyseren en het uitbreiden.
 
@@ -6,7 +6,7 @@ Als extra heb ik 2 projecten gemaakt. 1 ervan is gelukt en kun je zelf uitbreide
 # Emoji 
 Het project dat ik er aan gewerkt heb is een emoji via de vga poort op de scherm te tonen. Dit is een leuk concept om juist te beseffen hoe je via met de vga poort van de fpga of andere elektronische hardware ermee kunt spelen. Niet alleen is het gelukt om een emoji op mijn beeld te zetten maar ook frame per frame iets anders te laten doen. 
 
-### vga in fpga
+### VGA in FPGA
 Om dit te kunnen laten werken zijn er verschillende manieren maar basis hiervan is dat je moet weten hoe juist de communicatie in vga werkt.
 
 * vga
@@ -28,7 +28,7 @@ Bij de horizontal counter zien we dat we geen 640 hebben maar 800. Hoe kan dit ?
  Bij de vertical counter doen we hetzelfde maar niet tot 800 maar tot 521 hier zien we weer dat de display time van 31 tot 511 gaat wat ons 480 geeft. 
 
 
-### wat hebben we nodig?
+### Wat hebben we nodig?
 
 om met de fpga de vga te laten werken hebben we dus een clock nodig van 25MHz een vga blok van 640x480 en een blok te tekenen op het scherm. Een belangrijke concept over de vga is dat die maar 3 primaire kleuren heeft. Rood, blauw en groen. Hieronder zie je een foto van de pinnen van zo'n vga.
 
@@ -37,7 +37,7 @@ om met de fpga de vga te laten werken hebben we dus een clock nodig van 25MHz ee
  <p align="center">
 <img img width="400" height="150" src='img/vga4.PNG'></img><br>
 
-#### clock
+#### Clock
 om zo'n clock te maken heb ik gebruik gemaakt van clock wizard die je terug kunt vinden bij IP catalog. hier kies je 25Hz als output clock. 
 
 * video clock
@@ -100,12 +100,12 @@ Het volgende moet je goed is kijken. Hier zeg ik dat wanneer er een positieve ed
 				end  // if (r_hcounter...
 		end  // always
 
-de laatste stappen is assign. Hier voeg ik alles bij elkaar. assign is eigenlijk koppelen met elkaar. ik koppel de o_hcounter wat de output is met r_hcounter en hetzelfde met v_counter
+De laatste stappen is assign. Hier voeg ik alles bij elkaar. assign is eigenlijk koppelen met elkaar. ik koppel de o_hcounter wat de output is met r_hcounter en hetzelfde met v_counter
 
 	assign o_hcounter = r_hcounter;
 	assign o_vcounter = r_vcounter;
 
-als we terug naar de bovenste afbeelding gaan zien kun je zien dat bij de horizontale counter een hsync was van 0-96 en bij vsync 0-2. Dit is wat we hier ook doen.
+Als we terug naar de bovenste afbeelding gaan zien kun je zien dat bij de horizontale counter een hsync was van 0-96 en bij vsync 0-2. Dit is wat we hier ook doen.
 
 	assign o_hsync = (r_hcounter >= 0 && r_hcounter < 96) ? 1:0;  // hsync high for 96 counts                                                 
 	assign o_vsync = (r_vcounter >= 0 && r_vcounter < 2) ? 1:0;   // vsync high for 2 counts
@@ -169,14 +169,14 @@ Bij de volgende code controleer ik als de clk counter onder de 79000000 is ander
 				FRAME <= FRAME_2;
 		end 
 
-voor dat we echt beginnen te tekenen gaan we een assign doen zodat we de kleuren die we in de register hebben gestoken we sturen naar de ingang van de vga en dus op het scherm komt.
+Voor dat we echt beginnen te tekenen gaan we een assign doen zodat we de kleuren die we in de register hebben gestoken we sturen naar de ingang van de vga en dus op het scherm komt.
 
 	assign o_red = r_red;
 	assign o_blue = r_blue;
 	assign o_green = r_green;
 
 
-hier gaan we weer een posedge doen en controlleren met een case welke frame het nu is. We kunnen tekenen door te zeggen dat binnen een bepaalde bereike die de kleur rood of blauw of green op 4'hF moet gaan zetten. I_counter_y bepaalde de verticale pixels waarde op de scherm en i_counter_x de horizontale pixels. als we dus links van boven willen iets willen tekenen moeten we dus if(i_counter_y >= 32 && i_counter_y < 35 && i_counter_x >= 144 && i_counter_y < 150)r_red <= 4'hF; nu kunnen we iets links boven tekenen. maar waarom deze waardes? Denk eraan dat de v counter op 32 begint en h counter op 144 nu hebben we iets 6pixels breed en 3 pixels hoog getekend met de kleur rood. Als je dit nu wilt update dat die naar rechts gaan kun je dit update door gebruik te maken van FRAME2 en FRAME3 enz en de x en y locatie update. zo kun je zien dat uw punt beweegt.
+Hier gaan we weer een posedge doen en controlleren met een case welke frame het nu is. We kunnen tekenen door te zeggen dat binnen een bepaalde bereike die de kleur rood of blauw of green op 4'hF moet gaan zetten. I_counter_y bepaalde de verticale pixels waarde op de scherm en i_counter_x de horizontale pixels. als we dus links van boven willen iets willen tekenen moeten we dus if(i_counter_y >= 32 && i_counter_y < 35 && i_counter_x >= 144 && i_counter_y < 150)r_red <= 4'hF; nu kunnen we iets links boven tekenen. maar waarom deze waardes? Denk eraan dat de v counter op 32 begint en h counter op 144 nu hebben we iets 6pixels breed en 3 pixels hoog getekend met de kleur rood. Als je dit nu wilt update dat die naar rechts gaan kun je dit update door gebruik te maken van FRAME2 en FRAME3 enz en de x en y locatie update. zo kun je zien dat uw punt beweegt.
 
 	always @ (posedge clk)
 		begin 
@@ -294,7 +294,7 @@ De bedoeling hier is dat je tic tac toe ga spelen met je partner. in mijn code h
 <img img width="700" height="400" src='img/basys3.PNG'></img><br>
 
 #### stap1: project aanmaken
-we maken een top, vga_img (teken blok), vga_driver(vga blok) aan en kopieren alles van ervoor hierin. wat hier anders is dat we i.p.v een smiley we lijnen, blokken enz gaat tekenen. Daarna maken we ook 2 buttons projecten aan, een refreshcounter, anodecontrol, bcdcontrol en een 7segment 
+We maken een top, vga_img (teken blok), vga_driver(vga blok) aan en kopieren alles van ervoor hierin. wat hier anders is dat we i.p.v een smiley we lijnen, blokken enz gaat tekenen. Daarna maken we ook 2 buttons projecten aan, een refreshcounter, anodecontrol, bcdcontrol en een 7segment 
 
 #### stap 2: buttons
 We maken hier 3 knoppen aan. Eerste is een next button waar we 2 inputs hebben 1 van de linkse knop die alles gaat resetten en de andere van de bovenste knop waar we vak per vak gaan selecteren. De assign moet niet maar is aangeraden om de output te kunnen controleren, als de led1 aan gaat dan staat count[0] op 1 enz. voor derest zeggen we hier dat het moet tellen tot 9 en na negen we terug gaan moeten beginnen van 0 of als we de reset knop drukken we weer bij 1 beginnen. 
@@ -467,7 +467,7 @@ We declareren hier alles wat we nodig gaan hebben. Ik weet dat het hardcoded is 
 
 #### stap 4: always @
 
-	Om te kunnen kiezen wie juist aan de beurt is gebruiken we een select dat input is en dit gekoppeld is aan de output van het blok SELECT_BUTTON . wanneer de gebruiker erop klikt zal turn +1 gedaan worden en wanneer het groter is dan 1 bit gaat de flagturn aan. De flagturn is gekkopeld aan de ingang van de reset. Dus wat er gebeurt is dat reset = 1 waardoor turn terug 0 wordt. Hiermee bepalen we dus als speler1 aan de beurt is of speler 2.
+Om te kunnen kiezen wie juist aan de beurt is gebruiken we een select dat input is en dit gekoppeld is aan de output van het blok SELECT_BUTTON . wanneer de gebruiker erop klikt zal turn +1 gedaan worden en wanneer het groter is dan 1 bit gaat de flagturn aan. De flagturn is gekkopeld aan de ingang van de reset. Dus wat er gebeurt is dat reset = 1 waardoor turn terug 0 wordt. Hiermee bepalen we dus als speler1 aan de beurt is of speler 2.
 
 	always @(posedge select or posedge reset)
 	   begin
@@ -1025,7 +1025,7 @@ moeten gaan staan. Dit zorgt ervoor da we een nummer gaan kunnen zien op de 7 se
 
 # Problemen:
 
-   - Alles werkt goed, alleen de lijn kleur staat gedifineert als wit maar op het scherm komt het rood.
+   - Alles werkt goed, alleen de kleur van de lijn staat gedifineert als wit maar op het scherm komt het rood.
    - De 7 segment display telt op maar overschrijft zich met de vorige waarde( leds van anode 1 telt zich op bij anode 4)
 
 # Todo:
